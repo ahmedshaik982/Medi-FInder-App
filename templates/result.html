@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Centered Card with Margin Top</title>
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+      background-color: #2C313C;
+    }
+
+    .card {
+      margin-top: 180px;
+      max-width: 500px;
+      width: 100%;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 2px 6px rgba(0, 1, 2, 0.7);
+
+    }
+
+    .heading {
+      margin-top: 15px;
+      font-size: 35px;
+      color: #3b82f6; /* Blue color for the heading */
+      text-align: center;
+    }
+
+    .body-content {
+      margin-top: 20px;
+      text-align: center;
+    }
+    p{
+      font-size: 24px;
+    }
+    #disc{
+  margin-top:80px;
+  text-align: justify;
+  color: #ffffff;
+  opacity: 0.65;
+}
+  </style>
+</head>
+<body>
+  <div class="contai">
+  <div class="card">
+    <div class="heading">Recommended Medication</div>
+    <div class="body-content">
+      {% if results %}
+         <p>{{ results }}</p>
+          {% else %}
+          <p>Something wrong.</p>
+      {% endif %}
+    </div>
+
+  </div>
+
+  </div>
+
+</body>
+</html>
+
