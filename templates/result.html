@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Recommended Medication</title>
+  <title>Centered Card with Margin Top</title>
   <style>
     body {
       margin: 0;
@@ -11,23 +11,27 @@
       justify-content: center;
       align-items: flex-start;
       min-height: 100vh;
-      background-color: #2C313C;
+      background-image: linear-gradient(45deg, #9795EF, #F9C5D1);
+    }
+    .contai{
+      background-image: linear-gradient(45deg, #9795EF, #F9C5D1);
     }
 
     .card {
-      margin-top: 180px;
+      margin-top: 120px;
       max-width: 500px;
       width: 100%;
       padding: 20px;
       background-color: #fff;
-      box-shadow: 0 2px 6px rgba(0, 1, 2, 0.7);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.45);
+      transition: box-shadow 0.3s ease; 
 
     }
 
     .heading {
       margin-top: 15px;
       font-size: 35px;
-      color: #3b82f6; /* Blue color for the heading */
+      color: #3b82f6; 
       text-align: center;
     }
 
@@ -46,7 +50,7 @@
 }
 
 @media screen and (max-width: 767px) {
-      /* Adjust the styles for mobile devices */
+      
      .card{
         width:100%;
         max-width:270px;
@@ -57,14 +61,10 @@
 
 } 
 
-
-
-
-
   </style>
 </head>
 <body>
-  <div class="contai">
+  
   <div class="card">
     <div class="heading">Recommended Medication</div>
     <div class="body-content">
